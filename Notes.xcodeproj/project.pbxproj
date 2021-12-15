@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F000C722767E8B200CAD605 /* NoteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F000C712767E8B100CAD605 /* NoteError.swift */; };
 		1F2942522767B0660014DF2E /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2942512767B0660014DF2E /* NotesApp.swift */; };
 		1F2942542767B0660014DF2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2942532767B0660014DF2E /* ContentView.swift */; };
 		1F2942562767B0670014DF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2942552767B0670014DF2E /* Assets.xcassets */; };
 		1F2942592767B0670014DF2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2942582767B0670014DF2E /* Preview Assets.xcassets */; };
+		1F2942602767B0AF0014DF2E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29425F2767B0AF0014DF2E /* Note.swift */; };
+		1F2942622767B2650014DF2E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2942612767B2650014DF2E /* DataStore.swift */; };
+		1F2942642767BC510014DF2E /* NoteFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2942632767BC510014DF2E /* NoteFormViewModel.swift */; };
+		1F2942662767BE970014DF2E /* NoteFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2942652767BE970014DF2E /* NoteFormView.swift */; };
+		1F2942682767C5F60014DF2E /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2942672767C5F60014DF2E /* ModalType.swift */; };
+		1F2942702767D8BF0014DF2E /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29426F2767D8BF0014DF2E /* FileManager+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F000C712767E8B100CAD605 /* NoteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteError.swift; sourceTree = "<group>"; };
 		1F29424E2767B0660014DF2E /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2942512767B0660014DF2E /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		1F2942532767B0660014DF2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F2942552767B0670014DF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F2942582767B0670014DF2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F29425F2767B0AF0014DF2E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		1F2942612767B2650014DF2E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		1F2942632767BC510014DF2E /* NoteFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFormViewModel.swift; sourceTree = "<group>"; };
+		1F2942652767BE970014DF2E /* NoteFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFormView.swift; sourceTree = "<group>"; };
+		1F2942672767C5F60014DF2E /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		1F29426F2767D8BF0014DF2E /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				1F2942512767B0660014DF2E /* NotesApp.swift */,
-				1F2942532767B0660014DF2E /* ContentView.swift */,
+				1F29426A2767D6790014DF2E /* View */,
+				1F2942692767D6760014DF2E /* Model */,
+				1F29426B2767D67B0014DF2E /* ViewModel */,
+				1F29426C2767D83B0014DF2E /* Exstensions */,
 				1F2942552767B0670014DF2E /* Assets.xcassets */,
 				1F2942572767B0670014DF2E /* Preview Content */,
 			);
@@ -65,6 +82,43 @@
 				1F2942582767B0670014DF2E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F2942692767D6760014DF2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F29425F2767B0AF0014DF2E /* Note.swift */,
+				1F2942672767C5F60014DF2E /* ModalType.swift */,
+				1F000C712767E8B100CAD605 /* NoteError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F29426A2767D6790014DF2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F2942532767B0660014DF2E /* ContentView.swift */,
+				1F2942632767BC510014DF2E /* NoteFormViewModel.swift */,
+			);
+			name = View;
+			path = "New Group1/View";
+			sourceTree = "<group>";
+		};
+		1F29426B2767D67B0014DF2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F2942612767B2650014DF2E /* DataStore.swift */,
+				1F2942652767BE970014DF2E /* NoteFormView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F29426C2767D83B0014DF2E /* Exstensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F29426F2767D8BF0014DF2E /* FileManager+Extension.swift */,
+			);
+			path = Exstensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2942542767B0660014DF2E /* ContentView.swift in Sources */,
+				1F2942702767D8BF0014DF2E /* FileManager+Extension.swift in Sources */,
+				1F2942682767C5F60014DF2E /* ModalType.swift in Sources */,
+				1F2942622767B2650014DF2E /* DataStore.swift in Sources */,
+				1F2942662767BE970014DF2E /* NoteFormView.swift in Sources */,
+				1F2942642767BC510014DF2E /* NoteFormViewModel.swift in Sources */,
 				1F2942522767B0660014DF2E /* NotesApp.swift in Sources */,
+				1F2942602767B0AF0014DF2E /* Note.swift in Sources */,
+				1F000C722767E8B200CAD605 /* NoteError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
