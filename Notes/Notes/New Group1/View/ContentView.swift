@@ -17,7 +17,7 @@ struct ContentView: View {
                     Button {
                         modalType = .update(note)
                     }label: {
-                        Text(note.title)
+                        Text("\(Date.now.formatted(date: .numeric, time: .omitted))   \(note.content)")
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(Font.title3.weight(.semibold))
