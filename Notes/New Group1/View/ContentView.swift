@@ -22,13 +22,17 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(Font.title3.weight(.semibold))
                             .foregroundColor(Color(.label))
-                        Text(note.content)
+                        Text("\(Date.now.formatted(date: .numeric, time: .omitted))   \(note.content)")
                             .multilineTextAlignment(.leading)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .font(.body)
                             .foregroundColor(.secondary)
                             .brightness(0.1)
                             .lineLimit(1)
+                      /*  Text(Date.now.formatted(date: .numeric, time: .omitted))
+                            .multilineTextAlignment(.leading)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundColor(Color(.label)) */
                     }
                 }.onDelete(perform: dataStore.deleteNote)
             }

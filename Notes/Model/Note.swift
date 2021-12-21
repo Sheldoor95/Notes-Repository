@@ -14,7 +14,7 @@ struct Note: Identifiable, Codable {
     
     static var sampleData: [Note] {
         [
-            Note(title: "Recipe", content: "Eggs,etcc..")
+            Note(title: "Recipe", content: "Eggs,etc...")
         ]
         
     }

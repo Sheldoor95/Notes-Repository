@@ -23,7 +23,7 @@ struct NoteFormView: View {
                     .focused($focusField, equals: .note)
                 //                    .padding(.horizontal, 8)
                 TextEditor(text: $formVM.content)
-                    .focused($focusField, equals: .note)
+                   
                 //                    .padding(.horizontal, 5)
                 
                 Spacer()

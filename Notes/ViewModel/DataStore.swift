@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class DataStore: ObservableObject {
     @Published var notes:[Note] = []
@@ -14,11 +15,9 @@ class DataStore: ObservableObject {
         didSet{
             if !filterText.isEmpty {
                 filteredNotes = notes.filter{$0.title.lowercased().contains(filterText.lowercased())}
-                
             }else{
                 filteredNotes = notes
             }
-            
         }
     }
     
